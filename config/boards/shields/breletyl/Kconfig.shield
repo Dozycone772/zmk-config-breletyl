@@ -1,5 +1,5 @@
 config SHIELD_BRELETYL_LEFT
 	def_bool $(shields_list_contains,breletyl_left)
 
-	config SHIELD_BRELETYL_RIGHT
+config SHIELD_BRELETYL_RIGHT
 	def_bool $(shields_list_contains,breletyl_right)
