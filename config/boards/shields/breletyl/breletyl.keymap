@@ -346,7 +346,7 @@
 
         SLIP_layer {
             bindings = <
-                &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans                  &trans              &trans
+                &bootloader     &trans          &trans          &trans          &trans                                          &trans          &trans          &trans                  &trans              &bootloader
                 &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans                  &trans              &trans
                 &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans                  &trans              &trans
                                                                 &none           &trans          &trans              &none       &slippw     &td_usrnms
