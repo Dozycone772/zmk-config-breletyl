@@ -327,7 +327,7 @@
                 &bootloader     &trans          &trans          &trans          &trans                                          &trans          &trans          &trans                  &trans              &bootloader
                 &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans                  &trans              &trans
                 &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans                  &trans              &trans
-                                                                &none           &trans          &trans              &none       &slippw         &pwcunm
+                                                                &none           &trans          &trans              &pwcunm     &slippw         &trans
             >;
         };
     };
