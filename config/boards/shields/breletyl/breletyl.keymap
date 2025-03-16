@@ -50,14 +50,6 @@
             tapping-term-ms = <400>;
             bindings = <&kp MINUS>, <&kp UNDER>;
         };
-        
-        td_usrnms: tap_dance_usernames {
-            compatible = "zmk,behavior-tap-dance";
-            label = "tap_dance_usernames";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&pwcunm>, <&msdunm>;
-        };
 
         pht: positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -156,17 +148,6 @@
             tap-ms = <5>;
             bindings
                 = <&macro_tap &kp R &kp Y &kp A &kp N &kp DOT &kp S &kp DOT &kp B &kp R &kp O &kp W &kp N &kp AT &kp P &kp W &kp C &kp DOT &kp C &kp O &kp M &kp TAB>
-                ; 
-        };
-
-        msdunm: msdu {
-            label = "MSDUSERNAME";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <5>;
-            tap-ms = <5>;
-            bindings
-                = <&macro_tap &kp R &kp B &kp R &kp O &kp W &kp N0 &kp N4 &kp N6 &kp TAB>
                 ; 
         };
     };
@@ -301,7 +282,7 @@
                 &kp Q               &pht LC(W) W        &pht LC(F) F        &pht LC(P) P        &pht LC(B) B                                               &pht LC(J) J        &pht LC(L) L     &pht LC(U) U           &pht LC(Y) Y        &pht LS(SQT) SQT
                 &lh_hrmp LGUI A     &lh_hrmr LALT R     &lh_hrmm LCTRL S    &lh_hrms LSHFT T    &pht LC(G) G                                               &kp M               &rh_hrms RSHFT N &rh_hrmm RCTRL E       &pht LC(I) I        &pht LC(O) O
                 &pht LC(Z) Z        &pht LC(X) X        &pht LC(C) C        &pht LC(D) D        &pht LC(V) V                                               &pht LC(K) K        &kp H            &pht LS(COMMA) COMMA   &pht LS(DOT) DOT    &pht LS(FSLH) FSLH
-                                                                            &none               &kp LC(BSPC)    &thb_lr LOWER TAB      &thb_lr RAISE ENTER &kp SPACE           &none
+                                                                            &none               &thb_lr MOUSE LC(BSPC)    &thb_lr LOWER TAB                &thb_lr RAISE ENTER &kp SPACE        &none
             >;
         };
         
@@ -319,7 +300,7 @@
                 &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT                                       &kp PLUS        &kp N7          &kp N8                  &kp N9              &pht LS(SEMI) SEMI
                 &kp F2          &kp F4          &mkp MB2        &mkp MB1        &kp F5                                          &kp EQUAL       &kp N4          &kp N5                  &kp N6              &kp DOT
                 &out OUT_TOG    &bt BT_NXT      &kp PG_DN       &kp PG_UP       &kp F12                                         &kp MINUS       &kp N1          &kp N2                  &kp N3              &kp FSLH
-                                                                &none           &trans          &trans              &trans      &trans          &kp N0
+                                                                &none           &trans          &trans              &trans      &kp N0          &trans
             >;
         };
 
@@ -334,10 +315,10 @@
 
         MOUSE_layer {
             bindings = <
-                &trans          &trans          &trans          &trans          &trans                                              &kp TAB         &kp N7          &kp N8                  &kp N9              &kp ASTRK
-                &trans          &trans          &trans          &trans          &trans                                              &kp PLUS        &kp N4          &kp N5                  &kp N6              &kp DOT
-                &trans          &trans          &trans          &trans          &trans                                              &kp MINUS       &kp N1          &kp N2                  &kp N3              &kp FSLH
-                                                                &none           &trans          &trans              &kp SPACE       &kp N0          &none
+                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(Y)       &kp LC(V)                                           &kp LC(Y)   &kp LC(V)       &kp LC(C)               &kp LC(X)           &kp LC(Z)
+                &mkp MB1        &mkp MB2        &kp LCTRL       &kp LSHFT       &trans                                              &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_UP        &mmv MOVE_RIGHT
+                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(Y)       &kp LC(V)                                           &trans      &msc SCRL_LEFT  &msc SCRL_DOWN          &msc SCRL_UP        &msc SCRL_RIGHT
+                                                                &none           &trans          &trans              &kp SPACE       &kp N0      &none
             >;
         };
 
@@ -346,7 +327,7 @@
                 &bootloader     &trans          &trans          &trans          &trans                                          &trans          &trans          &trans                  &trans              &bootloader
                 &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans                  &trans              &trans
                 &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans                  &trans              &trans
-                                                                &none           &trans          &trans              &none       &slippw     &td_usrnms
+                                                                &none           &trans          &trans              &none       &slippw         &pwcunm
             >;
         };
     };
