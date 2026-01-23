@@ -31,7 +31,7 @@
 
 // Bluetooth HID configuration (attached to minimal BT node)
 &bt {
-    #hid {
+    hid {
         compatible = "zmk,hid";
         zmk,hid-keyboard = <>;
         zmk,hid-mouse = <>;
