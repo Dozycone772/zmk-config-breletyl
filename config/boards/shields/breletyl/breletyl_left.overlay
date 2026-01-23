@@ -19,10 +19,22 @@
         ;
 };
 
+// USB HID configuration
 / {
     hid {
         compatible = "zmk,hid";
         zmk,hid-usb = <>;
+        zmk,hid-mouse = <>;
+    };
+};
+
+// Bluetooth HID configuration
+&bt {
+    compatible = "zmk,bt-hid";
+
+    #hid {
+        compatible = "zmk,hid";
+        zmk,hid-keyboard = <>;
         zmk,hid-mouse = <>;
     };
 };
