@@ -19,20 +19,11 @@
         ;
 };
 
-// USB HID configuration (attached at root)
- / {
+// USB HID configuration at root
+/ {
     hid {
         compatible = "zmk,hid";
         zmk,hid-usb = <>;
-        zmk,hid-keyboard = <>;
-        zmk,hid-mouse = <>;
-    };
-};
-
-// Bluetooth HID configuration (attached to minimal BT node)
-&bt {
-    hid {
-        compatible = "zmk,hid";
         zmk,hid-keyboard = <>;
         zmk,hid-mouse = <>;
     };

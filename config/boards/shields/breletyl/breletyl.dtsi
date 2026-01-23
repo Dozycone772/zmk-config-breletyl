@@ -28,12 +28,5 @@
                               RC(3,2)  RC(3,3)  RC(3,4)     RC(3,5)  RC(3,6)  RC(3,7)
         >;
     };
-
-    // Minimal Bluetooth node for HID support
-    bt: bt {
-        compatible = "zephyr,bt-controller";
-        label = "BT";
-    };
-
 };
 
