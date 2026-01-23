@@ -18,3 +18,11 @@
         , <&pro_micro 9 GPIO_ACTIVE_HIGH>
         ;
 };
+
+/ {
+    hid {
+        compatible = "zmk,hid";
+        zmk,hid-usb = <>;
+        zmk,hid-mouse = <>;
+    };
+};
