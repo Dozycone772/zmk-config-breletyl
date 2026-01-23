@@ -19,20 +19,11 @@
         ;
 };
 
-// USB HID configuration (attached at root, works without a keyboard node)
+// USB HID configuration at root
  / {
     hid {
         compatible = "zmk,hid";
         zmk,hid-usb = <>;
-        zmk,hid-keyboard = <>;
-        zmk,hid-mouse = <>;
-    };
-};
-
-// Bluetooth HID configuration (only if &bt node exists in the DTSI)
-&bt {
-    #hid {
-        compatible = "zmk,hid";
         zmk,hid-keyboard = <>;
         zmk,hid-mouse = <>;
     };
