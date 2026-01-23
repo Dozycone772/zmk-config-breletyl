@@ -19,16 +19,17 @@
         ;
 };
 
-// USB HID configuration
-/ {
+// HID is now attached to the keyboard node from the dtsi
+&keyboard {
     hid {
         compatible = "zmk,hid";
         zmk,hid-usb = <>;
         zmk,hid-mouse = <>;
+        zmk,hid-keyboard = <>;
     };
 };
 
-// Bluetooth HID configuration
+// Bluetooth HID is attached under the bt node
 &bt {
     compatible = "zmk,bt-hid";
 
