@@ -375,7 +375,7 @@
                 &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT                                       &kp PLUS        &kp N7          &kp N8                  &kp N9              &pht LS(SEMI) SEMI
                 &kp F2          &kp F4          &mkp MB2        &mkp MB1        &kp F5                                          &kp EQUAL       &kp N4          &kp N5                  &kp N6              &kp DOT
                 &trans          &trans          &kp PG_DN       &kp PG_UP       &kp F12                                         &kp MINUS       &kp N1          &kp N2                  &kp N3              &kp FSLH
-                                                                &trans          &trans          &trans              &trans      &kp N0          &trans
+                                                                &trans          &trans          &trans              &trans      &trans          &kp N0
             >;
         };
 
@@ -384,7 +384,7 @@
                 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_NXT      &bt BT_CLR                                      &kp PLUS        &kp N7          &kp N8                  &kp N9              &trans
                 &kp N1          &kp N2          &kp N3          &kp N4          &kp Q                                           &kp EQUAL       &kp N4          &kp N5                  &kp N6              &kp DOT
                 &kp N6          &kp N7          &kp N8          &kp N9          &kp N0                                          &kp MINUS       &kp N1          &kp N2                  &kp N3              &kp FSLH
-                                                                &trans          &kp LGUI          &trans            &trans      &kp N0          &trans
+                                                                &trans          &kp LGUI          &trans            &trans      &trans          &kp N0
             >;
         };
 
